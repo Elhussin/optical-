@@ -47,7 +47,16 @@ Session(app)
 app.config.from_mapping(config)
 cache = Cache(app)
 
+import os
 
+# تحقق من وجود متغير البيئة DISPLAY
+if os.environ.get('DISPLAY'):
+    import pyautogui
+    import pywhatkit
+    print("تم استيراد pyautogui و pywhatkit")
+else:
+    print("لا يمكن استخدام pyautogui و pywhatkit في هذه البيئة")
+    # يمكنك أيضًا تعطيل الوظائف التي تعتمد على هذه المكتبات هنا
 
 
 # call routes from another file
