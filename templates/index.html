@@ -29,11 +29,11 @@
     <img class="card-img-top img_view" id="{{item['media_id']}}" src="static/uploads/{{item["imagelink"]}}" alt="{{item['imagelink']}} " >
     <div class="top-left p-2 bg-danger text-bg-dark"> {{item['discount']|int}}%</div>
 
-    <div class="card-body bg-light">
-      <h5 class="card-title class_float" >{{item['brand_name']|capitalize}} {{item['Model_no']}} {{item['framCotegery']|capitalize}}  for {{item['Collection_name']|capitalize}}</h5>
+    <div style="height: 500px;" class="card-body bg-light"  >
+      <h5 class="card-title class_float"   >{{item['brand_name']|capitalize}} {{item['Model_no']}} {{item['framCotegery']|capitalize}}  for {{item['Collection_name']|capitalize}}</h5>
       <div  class="clearBoth"></div>
       <div>
-      <p class="card-text w-50 float-start"  >Before <s class="color_red" >{{item['retialPrice']|int}}</s> SR  </p> 
+      <p class="card-text w-50 float-start "   >Before <s class="color_red" >{{item['retialPrice']|int}}</s> SR  </p> 
       <p class="card-text w-50 float-end text-end"  >Now <span class="color_red"> {{item['retialPrice']|int-((item['retialPrice']|int*item['discount']|int)/100)}} SR  </span> </p> 
 
     </div>
