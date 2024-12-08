@@ -415,7 +415,7 @@ def whatsUp():
         phone_number = "+966540919725"
         message = "I Want Get Recommended About your Products"
 # Sending the WhatsApp Message
-        pywhatkit.sendwhatmsg_instantly(phone_number, message)
+        # pywhatkit.sendwhatmsg_instantly(phone_number, message)
         
         return redirect("/")
 
