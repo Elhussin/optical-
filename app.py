@@ -1,6 +1,6 @@
 # Importing the Required Library
 import os 
-import pywhatkit
+# import pywhatkit
 from flask_qrcode import QRcode
 from pyFile.brand import brand
 from pyFile.payment import payment
@@ -50,13 +50,13 @@ cache = Cache(app)
 import os
 
 # تحقق من وجود متغير البيئة DISPLAY
-if os.environ.get('DISPLAY'):
-    import pyautogui
-    import pywhatkit
-    print("تم استيراد pyautogui و pywhatkit")
-else:
-    print("لا يمكن استخدام pyautogui و pywhatkit في هذه البيئة")
-    # يمكنك أيضًا تعطيل الوظائف التي تعتمد على هذه المكتبات هنا
+# if os.environ.get('DISPLAY'):
+#     import pyautogui
+#     import pywhatkit
+#     print("تم استيراد pyautogui و pywhatkit")
+# else:
+#     print("لا يمكن استخدام pyautogui و pywhatkit في هذه البيئة")
+#     # يمكنك أيضًا تعطيل الوظائف التي تعتمد على هذه المكتبات هنا
 
 
 # call routes from another file
